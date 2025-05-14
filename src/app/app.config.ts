@@ -8,7 +8,8 @@ import { StudioComponent } from './project/studio.component';
 import { ContactusComponent } from './contactus/contactus.component';
 
 const routes: Routes = [
-   { path: '', component: HomepageComponent },
+  { path: '', component: HomepageComponent },
+   { path: 'binyousaf', component: HomepageComponent },
    { path: 'about', component: AboutComponent },
    { path: 'service', component: ServiceComponent }, // Route for About page
    { path: 'technology', component: TechnologyComponent },

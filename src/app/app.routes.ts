@@ -8,6 +8,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 
 export const routes: Routes = [
   { path: '', component: HomepageComponent },
+  { path: 'binyousaf', component: HomepageComponent },
   { path: 'about', component: AboutComponent },
   { path: 'service', component: ServiceComponent }, // Route for About page
   { path: 'technology', component: TechnologyComponent },
