@@ -1,5 +1,5 @@
 .main{
-    height: 100vh;
+    height: auto;
 }
 .head{
     margin-top: 50px;
@@ -118,4 +118,22 @@ font-size: 40px;
 font-weight: 600;
 line-height: 48px;
 color: #55133c;
+}
+@media screen and (max-width:550px) {
+
+  .line{
+    width: 350px;
+  }
+  .head h1{
+    font-size: 24px;
+  }
+}
+@media screen and (max-width:400px) {
+
+  .line{
+    width: 250px;
+  }
+  .head h1{
+    font-size: 24px;
+  }
 }

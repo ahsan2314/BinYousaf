@@ -177,3 +177,77 @@ button:hover .button-text {
 .text-box p{
     font-size: 17.5px;
 }
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .img-front {
+    left: 50px;
+    bottom: -50px;
+  }
+
+  .text-box h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .text-box p {
+    text-align: center;
+  }
+
+  button.learn-more {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    width: 90%;
+    gap: 30px;
+  }
+
+  .img-back,
+  .img-front {
+    width: 100%;
+  }
+
+  .img-front {
+    left: 20px;
+    bottom: -40px;
+  }
+
+  .text-box h2 {
+    font-size: 24px;
+  }
+
+  .text-box p {
+    font-size: 16px;
+  }
+
+  .button-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-front {
+    left: 10px;
+    bottom: -30px;
+  }
+
+  .text-box h2 {
+    font-size: 22px;
+  }
+
+  .text-box p {
+    font-size: 15px;
+  }
+
+  .btn,
+  button.learn-more {
+    width: 100%;
+  }
+}

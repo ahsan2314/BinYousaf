@@ -144,6 +144,27 @@
   font-family: sans-serif;
   margin-top: 30px;
 }
-.tech-categories{
-    margin-top: 150px;
+/* .tech-categories{
+  margin-top: 100px;
+} */
+  
+@media screen and (max-width:650px) {
+  .line{
+    width: 300px;
+  }
+  .word{
+    font-size: 25px;
+  }
+  
+}
+@media screen and (max-width:400px) {
+  .word{
+    font-size: 16px;
+  }
+  .line{
+    width: 300px;
+  }
+  .category h3{
+    font-size: 24px;
+  }
 }

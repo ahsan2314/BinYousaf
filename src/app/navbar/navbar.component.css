@@ -214,3 +214,12 @@ header.navbar {
   }
   
 }
+@media screen and (max-width:1247px) {
+
+  .logo img{
+    margin-left: 70px;
+  }
+  .hamburger{
+    margin-right: 50px;
+  }
+}

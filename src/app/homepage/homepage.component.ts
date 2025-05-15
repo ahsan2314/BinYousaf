@@ -1,5 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { MainComponent } from '../main/main.component';
 import { SuitableServiceComponent } from '../suitable-service/suitable-service.component';
 import { InovateComponent } from '../inovate/inovate.component';
 import { FaqsComponent } from '../faqs/faqs.component';
@@ -13,11 +14,13 @@ import { ProjectAComponent } from '../project-a/project-a.component';
 
 
 
+
 @Component({
   selector: 'app-homepage',
   standalone: true,
   imports: [
     RouterModule,
+    MainComponent,
     SuitableServiceComponent,
     FooterComponent,
     FaqsComponent,
