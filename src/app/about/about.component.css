@@ -129,12 +129,12 @@ body {
   position: relative;
 }
 
-.values-list li::before {
+/* .values-list li::before {
   content: '✔';
   position: absolute;
   left: 0;
   color: #6d0c48;
-}
+} */
 
 /* ========== CTA Button ========== */
 .cta {

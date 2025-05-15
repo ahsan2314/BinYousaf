@@ -1,5 +1,4 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -15,7 +14,7 @@
           "options": {
             "outputPath": "dist/binyousaf",
             "index": "src/index.html",
-            "browser": "src/main.ts",
+            "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -27,7 +26,6 @@
             "styles": [
               "src/styles.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
-
             ],
             "scripts": []
           },
@@ -53,7 +51,7 @@
               "sourceMap": true
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "development"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
