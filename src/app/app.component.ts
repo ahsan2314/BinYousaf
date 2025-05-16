@@ -18,7 +18,7 @@ import { NavbarComponent } from './navbar/navbar.component';
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  standalone: true,
+  standalone: true,     
 })
 export class AppComponent {
   title = 'binyousaf';
