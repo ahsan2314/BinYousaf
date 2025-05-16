@@ -138,12 +138,15 @@
 .containerOne:hover {
   background-color: #CD0064;
 }
+
 .containerTwo:hover {
   background-color: #00acee;
 }
+
 .containerThree:hover {
   background-color: #0072b1;
 }
+
 .containerFour:hover {
   background-color: #1F9A16;
 }
@@ -170,32 +173,40 @@
     transform: translateY(-50px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
+
 .footer-row {
   display: flex;
   flex-wrap: wrap;
 }
+
 .footer-col {
   flex: 1;
   min-width: 200px;
 }
+
 @media (max-width: 768px) {
+
   .footer-col,
   .footer-about {
     flex: 1 1 100%;
   }
 }
+
 .contact-info {
   width: 100%;
   max-width: 350px;
 }
+
 .custom-footer {
   padding: 5px 20px 30px;
 }
+
 .footer-col,
 .footer-about,
 .contact-info {
