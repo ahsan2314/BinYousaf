@@ -13,6 +13,7 @@
   align-items: center;
   color: white;
   font-family: sans-serif;
+  padding: 150px;
 }
 .hero::after {
   content: "";
@@ -57,6 +58,9 @@
   font-size: 18px;
   font-weight: 500;
 }
+.section2{
+  padding: 80px;
+}
 
 .section2 p,
 .section2 h1 {
@@ -73,7 +77,7 @@
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 12px;
   padding: 20px;
 }
