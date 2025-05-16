@@ -181,7 +181,7 @@
   }
 
   .card__description {
-    font-size: 13px;
+    font-size: 18px;
   }
 
   .card__title {
@@ -198,5 +198,11 @@
 
   .card__description {
     font-size: 14px;
+  }
+}
+@media screen and (max-width:760px) {
+
+  .card__description {
+    font-size: 22px;
   }
 }
