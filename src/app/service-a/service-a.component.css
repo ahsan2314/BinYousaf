@@ -137,3 +137,11 @@ color: #55133c;
     font-size: 24px;
   }
 }
+@media screen and (max-width:350px) {
+
+  .service-card{
+
+    height: 350px;
+  }
+  
+}
