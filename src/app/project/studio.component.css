@@ -1,3 +1,4 @@
+/* CSS */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,13 +8,14 @@
 .hero {
   background: url('https://avatars.mds.yandex.net/i?id=ee45fe52a83489ba0ebd5e929f56170644b98a75-5331889-images-thumbs&n=13') center center/cover no-repeat;
   position: relative;
-  height: 300px;
+  height: auto;
+  min-height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-family: sans-serif;
-  padding: 150px;
+  padding: 80px 20px;
 }
 .hero::after {
   content: "";
@@ -39,29 +41,46 @@
   color: #ccc;
 }
 
-.stats-section {
-  background: #6D0C48;
-  padding: 30px 20px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+/* Counter Section */
+.counter-section {
+  background-color: #6D0C48;
+  padding: 3rem 1rem;
   color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
 }
-.stat-box {
-  min-width: 150px;
-}
-.stat-box h2 {
-  font-size: 36px;
-}
-.stat-box p {
-  font-size: 18px;
-  font-weight: 500;
-}
-.section2{
-  padding: 80px;
+
+.counter-box {
+  flex: 1 1 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  min-width: 220px;
+  max-width: 300px;
+  transition: all 0.3s ease;
 }
 
+.counter-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-right: 10px;
+}
+
+.counter-label {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.4;
+  max-width: 200px;
+}
+
+/* Section 2 */
+.section2 {
+  padding: 60px 20px;
+}
 .section2 p,
 .section2 h1 {
   text-align: center;
@@ -75,13 +94,15 @@
   color: #6D0C48;
 }
 
+/* Projects Grid */
+.project-section {
+  padding: 40px 20px;
+}
 .project-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 20px;
 }
-
 .project-card {
   position: relative;
   width: 80%;
@@ -89,6 +110,7 @@
   overflow: hidden;
   cursor: pointer;
   margin: 0 auto;
+  transition: all 0.3s ease-in-out;
 }
 .project-card img {
   width: 100%;
@@ -97,35 +119,32 @@
   border-radius: 10px;
   transition: 0.3s ease;
 }
-.project-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px;
-  height: 100px;
-  border-top: 13px solid black;
-  border-left: 13px solid black;
-  border-top-left-radius: 12px;
-  transition: 0.3s ease;
-}
+.project-card::before,
 .project-card::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  right: 0;
   width: 100px;
   height: 100px;
+  transition: 0.3s ease;
+}
+.project-card::before {
+  top: 0;
+  left: 0;
+  border-top: 13px solid black;
+  border-left: 13px solid black;
+  border-top-left-radius: 12px;
+}
+.project-card::after {
+  bottom: 0;
+  right: 0;
   border-bottom: 13px solid #6D0C48;
   border-right: 13px solid #6D0C48;
   border-bottom-right-radius: 12px;
-  transition: 0.3s ease;
 }
 .project-card:hover::before,
 .project-card:hover::after {
   opacity: 0;
 }
-
 .project-title {
   position: absolute;
   inset: 0;
@@ -149,34 +168,50 @@
   width: 150px;
   padding: 20px;
   border-radius: 20px;
-  opacity: 0.7;
   background-color: transparent;
+  opacity: 0.7;
 }
 .project-title:hover p {
   background-color: #6D0C48;
 }
 
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .counter-box {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
 @media (max-width: 768px) {
+  .hero {
+    padding: 60px 15px;
+  }
   .hero-content h1 {
     font-size: 32px;
-  }
-  .stats-section {
-    flex-direction: column;
-    align-items: center;
-  }
-  .stat-box h2 {
-    font-size: 28px;
-  }
-  .stat-box p {
-    font-size: 16px;
   }
   .section2 p,
   .section2 h1 {
     font-size: 22px;
-    padding: 0 10px;
   }
-  .project-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .counter-section {
+    flex-direction: column;
+  }
+  .counter-box {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+  }
+  .counter-number {
+    font-size: 1.8rem;
+    margin: 0 0 10px 0;
+  }
+  .counter-label {
+    font-size: 1rem;
   }
   .project-card img {
     height: 200px;
@@ -188,7 +223,19 @@
 }
 
 @media (max-width: 480px) {
+  .hero {
+    padding: 40px 10px;
+  }
   .project-grid {
     grid-template-columns: 1fr;
+  }
+  .counter-number {
+    font-size: 1.5rem;
+  }
+  .counter-label {
+    font-size: 0.95rem;
+  }
+  .project-card img {
+    height: 180px;
   }
 }

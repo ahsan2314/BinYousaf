@@ -7,24 +7,12 @@
   </div>
 </section>
 
-<section class="stats-section">
-  <div class="stat-box">
-    <h2>99</h2>
-    <p>Success in getting happy customer</p>
+<div #counterSection class="counter-section">
+  <div class="counter-box" *ngFor="let counter of counters">
+    <div class="counter-number">{{ counter.current }}</div>
+    <div class="counter-label">{{ counter.label }}</div>
   </div>
-  <div class="stat-box">
-    <h2>25</h2>
-    <p>Thousands of successful business</p>
-  </div>
-  <div class="stat-box">
-    <h2>120</h2>
-    <p>Total clients who love HighTech</p>
-  </div>
-  <div class="stat-box">
-    <h2>5</h2>
-    <p>Stars reviews given by satisfied clients</p>
-  </div>
-</section>
+</div>
 
 <div class="section2">
   <p>Our Projects</p>
@@ -65,6 +53,6 @@
     </div>
 
   </div>
-</section>
+</section><br><br><br>
 
 <app-footer></app-footer>

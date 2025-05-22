@@ -95,7 +95,8 @@ body {
 }
 
 .contact-btn:hover {
-  background-color: #003d80;
+  background-color: black;
+  color: white;
 }
 
 /* ========== Mission, Vision, Values ========== */
@@ -150,12 +151,13 @@ body {
   border-radius: 10px;
   font-weight: bold;
   text-decoration: none;
-  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s ease;
 }
 
 .cta a:hover {
-  background-color: #003d80;
+  background-color: black;
+  color: white;
 }
 
 /* ========== Team Section ========== */

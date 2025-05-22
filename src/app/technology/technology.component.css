@@ -1,8 +1,8 @@
 .tech-section,
 .tech-categories {
   padding: 80px 20px;
-  background: #f5f5f5;
 }
+
 
 .container {
   max-width: 1200px;
@@ -45,7 +45,7 @@
 }
 
 .tech-card {
-  background: #fff;
+  /* background: #fff; */
   padding: 0; /* Remove padding to let the image cover the full area */
   border-radius: 16px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);

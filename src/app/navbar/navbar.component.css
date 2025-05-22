@@ -38,7 +38,7 @@ header.navbar {
 
 /* Contact Button */
 .contact-btn {
-  background-color: #b3247c;
+  background-color: #6D0C48;
   color: white;
   border: none;
   padding: 10px 30px;
@@ -110,8 +110,8 @@ header.navbar {
 }
 
 .contact-btn:hover {
-  background-color: #a14d81;
-  color: black;
+  background-color: #6D0C48;
+  color: white;
 }
 
 .navbar a {
@@ -153,6 +153,7 @@ header.navbar {
     right: 0;
     background-color: #fff;
     flex-direction: column;
+    
     width: 100%;
     display: none;
     padding: 10px 0;

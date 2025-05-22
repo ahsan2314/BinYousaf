@@ -2,7 +2,6 @@
 .main {
   width: 100%;
   padding: 60px 20px;
-  background: linear-gradient(to right, #ffffff, #f7f7f7);
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
