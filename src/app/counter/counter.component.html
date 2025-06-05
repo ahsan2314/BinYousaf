@@ -1,0 +1,6 @@
+<div #counterSection class="counter-section">
+  <div class="counter-box" *ngFor="let counter of counters">
+    <div class="counter-number">{{ counter.current }}</div>
+    <div class="counter-label">{{ counter.label }}</div>
+  </div>
+</div>

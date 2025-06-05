@@ -3,12 +3,13 @@ import { RouterModule } from '@angular/router';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { FooterComponent } from '../footer/footer.component';
 import emailjs from '@emailjs/browser';
+import { CounterComponent } from '../counter/counter.component';
 
 
 @Component({
   selector: 'app-contactus',
   standalone: true,
-  imports: [RouterModule, NavbarComponent,FooterComponent],
+  imports: [RouterModule, NavbarComponent,FooterComponent,CounterComponent],
   templateUrl: './contactus.component.html',
   styleUrl: './contactus.component.css'
 })

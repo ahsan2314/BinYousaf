@@ -21,6 +21,7 @@ body {
     padding: 2rem;
 }
 
+
 .container {
     max-width: 800px;
     margin: 150px auto 0 auto;
@@ -29,7 +30,33 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     overflow: hidden;
 }
-
+.hero {
+  background: url('https://avatars.mds.yandex.net/i?id=0bd68890aa8ad472c4b9ef251c3532c62df56b12-5734612-images-thumbs&n=13') center center/cover no-repeat;
+  position: relative;
+  height: 350px;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: sans-serif;
+  padding: 80px 20px;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: black;
+}
 .form-header {
     padding: 1.5rem 2rem;
     color: white;
